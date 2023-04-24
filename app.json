@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "juristo",
+    "name": "Juristo",
     "slug": "juristo",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -14,6 +14,10 @@
     "assetBundlePatterns": [
       "**/*"
     ],
+    "plugins": [
+      "@config-plugins/react-native-blob-util",
+      "@config-plugins/react-native-pdf"
+    ],
     "ios": {
       "supportsTablet": true
     },
@@ -21,10 +25,23 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "permissions": [
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.DOWNLOAD_WITHOUT_NOTIFICATION",
+        "android.permission.ACCESS_NETWORK_STATE"
+      ],
+      "package": "com.juristo.advacto",
+      "versionCode": 1
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "4bca6b96-442d-4c98-b430-d896da9e766b"
+      }
     }
   }
 }
