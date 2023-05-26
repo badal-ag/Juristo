@@ -149,7 +149,7 @@ const Profile = () => {
             </TouchableOpacity>
           </View>
           <TouchableOpacity
-            onPress={() => navigation.navigate("Landing")}
+            onPress={() => navigation.replace("Landing")}
             className="bg-black mt-8 rounded-md h-14 w-44 justify-center items-center"
           >
             <Text

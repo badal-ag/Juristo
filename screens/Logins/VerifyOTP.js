@@ -75,7 +75,6 @@ export default function VerifyOTP({ route }) {
         verificationCode
       );
       const authResult = await signInWithCredential(auth, credential);
-
       const date = new Timestamp.now();
       const user = auth.currentUser;
       const uid = user.uid;

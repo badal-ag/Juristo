@@ -45,7 +45,7 @@ const LandingPage = () => {
       <View className="flex  items-center justify-center">
         <TouchableOpacity
           className=" flex  items-center justify-center h-12 w-44 bg-gray-700 rounded-lg mt-4"
-          onPress={() => navigation.navigate("Login")}
+          onPress={() => navigation.replace("Login")}
         >
           <Text
             className="text-white  text-lg"
@@ -61,12 +61,12 @@ const LandingPage = () => {
           colors={["#34D6CA", "#87E6DF"]}
           className=" flex  items-center justify-center w-full  h-24   "
         >
-          {/*<TouchableOpacity >
+          {/* <TouchableOpacity >
             <Image
               resizeMode="cover"
               source={require("../assets/icons8exterior100-1.png")}
             />
-          </TouchableOpacity>*/}
+          </TouchableOpacity> */}
         </LinearGradient>
       </View>
     </SafeAreaView>

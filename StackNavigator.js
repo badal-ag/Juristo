@@ -5,7 +5,7 @@ import Login from "./screens/Logins/index";
 import VerifyOTP from "./screens/Logins/VerifyOTP";
 import DashBoard from "./screens/DashBoard";
 import Notes from "./screens/Notes";
-import PdfViewer from "./screens/PdfViewer";
+// import PdfViewer from "./screens/PdfViewer";
 import Quiz from "./screens/Quiz";
 import Summary from "./screens/Summary";
 import Modal from "./screens/Modal";
@@ -16,6 +16,7 @@ import Comingsoon from "./screens/Comingsoon";
 import Chatbot from "./screens/Chatbot";
 import { useLayoutEffect, useState } from "react";
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import PdfViewer from "./screens/PdfViewer";
 const Stack = createNativeStackNavigator();
 
 const StackNavigator = () => {
@@ -29,9 +30,13 @@ const StackNavigator = () => {
   }, [uid]);
   return (
     <Stack.Navigator
+    // initialRouteName="DashBoard"
       screenOptions={{
         headerShown: false,
-      }}
+        
+        
+      }
+    }
     >
       {uid ? (
         <>
@@ -51,6 +56,9 @@ const StackNavigator = () => {
             <Stack.Screen name="Profile" component={Profile} />
 
             <Stack.Screen name="PdfViewer" component={PdfViewer} />
+          <Stack.Screen name="Landing" component={LandingPage} />
+          <Stack.Screen name="Login" component={Login} />
+          <Stack.Screen name="VerifyOTP" component={VerifyOTP} />
       
           </Stack.Group>
         

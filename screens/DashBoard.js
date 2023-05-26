@@ -4,6 +4,7 @@ import { LinearGradient } from "expo-linear-gradient";
 import { Color, FontFamily, FontSize, Border } from "../GlobalStyles";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { useNavigation } from "@react-navigation/native";
+import { Dimensions } from "react-native";
 import {
   collection,
   doc,
@@ -47,7 +48,6 @@ const Dashboard = () => {
           colors={["#30d5c8", "#fff"]}
         />
         <Text style={styles.dashboard1}>Dashboard</Text>
-      
         <TouchableOpacity
           onPress={() => navigation.navigate("Quiz")}
           style={[styles.rectangleParent, styles.groupLayout]}
@@ -124,6 +124,7 @@ const Dashboard = () => {
                 styles.groupChild,
                 styles.groupChildShadowBox,
                 styles.groupLayout,
+                
               ]}
             />
             <Text
@@ -131,6 +132,8 @@ const Dashboard = () => {
                 styles.loginSignup,
                 styles.profileTypo,
                 styles.profileTypo1,
+                {alignSelf:'center'}
+
               ]}
             >
               Resources
@@ -151,8 +154,9 @@ const Dashboard = () => {
 
 const styles = StyleSheet.create({
   dashboardLayout: {
-    width: 380,
+    width: Dimensions.get('window').width,
     position: "absolute",
+    
   },
   continuePosition: {
     top: 0,
@@ -162,6 +166,7 @@ const styles = StyleSheet.create({
     height: 100,
     width: 147,
     position: "absolute",
+    
   },
   groupChildShadowBox: {
     shadowOpacity: 1,
@@ -301,8 +306,9 @@ const styles = StyleSheet.create({
   dashboard: {
     backgroundColor: Color.white,
     flex: 1,
-    width: "100%",
-    height: 640,
+    alignContent:'center',
+    width: Dimensions.get('window').width,
+    height: Dimensions.get('window').height,
     overflow: "hidden",
   },
 });
