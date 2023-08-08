@@ -3,25 +3,25 @@ import { useNavigation } from '@react-navigation/native';
 import { Ionicons } from '@expo/vector-icons';
 
 export default function Header() {
-    
+
     const navigation = useNavigation();
-    
-    const checkOrders = () => { 
+
+    const checkOrders = () => {
         navigation.navigate("Cart");
     }
 
-    const goToSearch = () => { 
+    const goToSearch = () => {
         navigation.navigate("Product Search");
     }
 
-    return(
+    return (
         <View style={styles.root}>
             <View style={styles.container}>
 
                 <View style={{ width: "50%" }}>
                     <Text style={{ fontFamily: "Montserrat_700Bold", fontSize: 22 }}>Jyoti Store</Text>
                 </View>
-                
+
                 <View style={{ width: "50%", alignItems: "flex-end" }}>
                     <View style={{ flexDirection: 'row' }}>
 
@@ -58,10 +58,10 @@ const styles = StyleSheet.create({
     },
 
     container: {
-        flexDirection:"row",
-        width:"100%",
-        marginTop:20,
-        alignItems:"center"
+        flexDirection: "row",
+        width: "100%",
+        marginTop: 20,
+        alignItems: "center"
     }
 
 });

@@ -1,14 +1,14 @@
 {
   "expo": {
     "name": "Juristo",
-    "slug": "j",
+    "slug": "juristo-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
-      "resizeMode": "contain",
+      "resizeMode": "cover",
       "backgroundColor": "#000000"
     },
     "assetBundlePatterns": [
@@ -20,12 +20,13 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.juristo.advacto"
+      "bundleIdentifier": "com.avdacto.juristo"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/splash.png",
-        "backgroundColor": "#ffffff"
+        "resizeMode": "cover",
+        "backgroundColor": "#000000"
       },
       "permissions": [
         "android.permission.READ_EXTERNAL_STORAGE",
@@ -33,7 +34,7 @@
         "android.permission.DOWNLOAD_WITHOUT_NOTIFICATION",
         "android.permission.ACCESS_NETWORK_STATE"
       ],
-      "package": "com.juristo.advacto",
+      "package": "com.avdacto.juristo",
       "versionCode": 1
     },
     "web": {
@@ -41,9 +42,9 @@
     },
     "extra": {
       "eas": {
-        "projectId": "ef45f41e-e350-470b-ab2b-2ea620911268"
+        "projectId": "ea847758-a170-44f7-b57c-4ba5de9eaef6"
       }
     },
-    "owner": "agentlegend"
+    "owner": "badal1369"
   }
 }

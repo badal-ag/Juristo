@@ -30,18 +30,18 @@ const StackNavigator = () => {
   }, [uid]);
   return (
     <Stack.Navigator
-    // initialRouteName="DashBoard"
+      // initialRouteName="DashBoard"
       screenOptions={{
         headerShown: false,
-        
-        
+
+
       }
-    }
+      }
     >
       {uid ? (
         <>
           <Stack.Group>
-          
+
             <Stack.Screen name="DashBoard" component={DashBoard} />
             <Stack.Screen name="Chatbot" component={Chatbot} />
             <Stack.Screen name="Quiz" component={Quiz} />
@@ -56,13 +56,13 @@ const StackNavigator = () => {
             <Stack.Screen name="Profile" component={Profile} />
 
             <Stack.Screen name="PdfViewer" component={PdfViewer} />
-          <Stack.Screen name="Landing" component={LandingPage} />
-          <Stack.Screen name="Login" component={Login} />
-          <Stack.Screen name="VerifyOTP" component={VerifyOTP} />
-      
+            <Stack.Screen name="Landing" component={LandingPage} />
+            <Stack.Screen name="Login" component={Login} />
+            <Stack.Screen name="VerifyOTP" component={VerifyOTP} />
+
           </Stack.Group>
-        
-         
+
+
           <Stack.Group>
             <Stack.Screen name="Loading" component={Loading} />
           </Stack.Group>

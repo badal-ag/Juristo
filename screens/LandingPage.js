@@ -57,6 +57,12 @@ const LandingPage = () => {
             Getting Started{" "}
           </Text>
         </TouchableOpacity>
+        {/* <TouchableOpacity >
+          <Image
+            resizeMode="cover"
+            source={require("../assets/icons8exterior100-1.png")}
+          />
+        </TouchableOpacity> */}
       </View>
 
       <View className="absolute bottom-0 inset-x-0">
@@ -64,12 +70,6 @@ const LandingPage = () => {
           colors={["#34D6CA", "#87E6DF"]}
           className=" flex  items-center justify-center w-full  h-24   "
         >
-          {/* <TouchableOpacity >
-            <Image
-              resizeMode="cover"
-              source={require("../assets/icons8exterior100-1.png")}
-            />
-          </TouchableOpacity> */}
         </LinearGradient>
       </View>
     </SafeAreaView>

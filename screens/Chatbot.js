@@ -31,10 +31,15 @@ const Chatbot = () => {
       setMessages(previousMessages => GiftedChat.append(previousMessages, userMessage));
       const messageText = userMessage.text.toLowerCase();
       const keywords = [
+        'Orders',
+        'Rules',
+        'Okay',
+        'Hey',
         'crime',
+        'Hello',
         'law',
         'regulataions',
-        'articles',
+        'Law articles',
         'citizen',
         'theft',
         'layer',
@@ -63,7 +68,7 @@ const Chatbot = () => {
         // if the message does not contain any food-related keywords, respond with a default message
         const botMessage = {
           _id: new Date().getTime + 1,
-          text: "I'm your law bot, ask me anything realted to law",
+          text: "I'm your law bot, ask me anything related to law",
           createdAt: new Date(),
           user: {
             _id: 2,
